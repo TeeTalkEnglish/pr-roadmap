@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kim's Australia PR Journey 🇦🇺</title>
+  <style>
+
+    /* ── RESET ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      color: #1a1a1a;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: #e05c2b;
+      color: white;
+      text-align: center;
+      padding: 18px 20px;
+      position: relative;
+    }
+
+    header h1 { font-size: 22px; }
+    header p  { font-size: 13px; opacity: 0.85; margin-top: 3px; }
+
+    .back-link {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 13px;
+      background: rgba(255,255,255,0.2);
+      padding: 6px 12px;
+      border-radius: 20px;
+      transition: background 0.2s;
+    }
+
+    .back-link:hover { background: rgba(255,255,255,0.35); }
+
+    /* ── PAGE WRAPPER ── */
+    .page-wrapper {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    /* ════════════════════════════
+       HERO CARD
+    ════════════════════════════ */
+    .hero-card {
+      background: linear-gradient(135deg, #e05c2b, #c0451a);
+      color: white;
+      border-radius: 20px;
+      padding: 36px 24px;
+      text-align: center;
+      box-shadow: 0 6px 24px rgba(224,92,43,0.4);
+    }
+
+    .hero-flags {
+      font-size: 30px;
+      letter-spacing: 10px;
+      margin-bottom: 12px;
+    }
+
+    .hero-character { font-size: 70px; margin-bottom: 12px; }
+
+    .hero-name {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+      opacity: 0.92;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .hero-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.18);
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #2ecc71;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.6; transform: scale(1.3); }
+    }
+
+    /* ════════════════════════════
+       SECTION LABEL
+    ════════════════════════════ */
+    .section-label {
+      font-size: 12px;
+      font-weight: bold;
+      color: #e05c2b;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e05c2b;
+    }
+
+    .section-intro {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.8;
+      margin-top: -10px;
+    }
+
+    /* ════════════════════════════
+       ALERT CARD
+    ════════════════════════════ */
+    .alert-card {
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      background: #fff5f5;
+      border: 2px solid #e74c3c;
+    }
+
+    .alert-icon { font-size: 32px; flex-shrink: 0; margin-top: 2px; }
+
+    .alert-content strong {
+      font-size: 15px;
+      color: #c0392b;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .alert-content p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .code-box {
+      background: #1a1a1a;
+      color: #2ecc71;
+      font-family: monospace;
+      font-size: 15px;
+      padding: 14px 18px;
+      border-radius: 10px;
+      line-height: 2.2;
+      margin: 10px 0;
+    }
+
+    /* ════════════════════════════
+       COMPARE CARDS
+    ════════════════════════════ */
+    .compare-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .compare-card {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.1);
+    }
+
+    .compare-top {
+      padding: 10px 12px;
+      font-size: 11px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    .good-top { background: #27ae60; color: white; }
+    .bad-top  { background: #e74c3c; color: white; }
+
+    .compare-body {
+      background: white;
+      padding: 16px;
+    }
+
+    .compare-emoji {
+      font-size: 38px;
+      text-align: center;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .compare-card h3 {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 4px;
+      color: #1a1a1a;
+    }
+
+    .compare-code {
+      font-size: 11px;
+      text-align: center;
+      color: #888;
+      font-family: monospace;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .compare-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .compare-list li {
+      font-size: 12px;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    /* ════════════════════════════
+       JOURNEY MAP
+    ════════════════════════════ */
+    .journey-map {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .journey-step {
+      display: flex;
+      gap: 16px;
+    }
+
+    .journey-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .journey-circle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #ddd;
+      color: #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+
+    .journey-circle.now { background: #e05c2b; color: white; font-size: 18px; }
+    .journey-circle.win { background: #f5c518; color: white; font-size: 18px; }
+
+    .journey-line {
+      width: 3px;
+      flex: 1;
+      background: #e0e0e0;
+      margin: 6px 0;
+      min-height: 24px;
+    }
+
+    .journey-content {
+      background: white;
+      border-radius: 14px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+      flex: 1;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    }
+
+    .journey-step.active .journey-content {
+      border: 2px solid #e05c2b;
+      background: #fff9f7;
+    }
+
+    .journey-step.win-step .journey-content {
+      border: 2px solid #f5c518;
+      background: #fffdf0;
+    }
+
+    .journey-tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 10px;
+      font-size: 10px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .tag-now    { background: #e05c2b; color: white; }
+    .tag-soon   { background: #3498db; color: white; }
+    .tag-future { background: #eee; color: #777; }
+    .tag-win    { background: #f5c518; color: #333; }
+
+    .journey-content h3 {
+      font-size: 15px;
+      margin-bottom: 4px;
+      color: #1a1a1a;
+    }
+
+    .journey-time {
+      font-size: 12px;
+      color: #e05c2b;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .journey-content p {
+      font-size: 13px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .checklist-mini {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .check-item {
+      font-size: 12px;
+      color: #444;
+      padding: 6px 12px;
+      background: #f8f9fa;
+      border-radius: 8px;
+      border-left: 3px solid #e05c2b;
+      line-height: 1.5;
+    }
+
+    .journey-tip {
+      margin-top: 12px;
+      background: #fffbea;
+      border-left: 3px solid #f5c518;
+      padding: 8px 12px;
+      border-radius: 0 8px 8px 0;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.7;
+    }
+
+    /* ════════════════════════════
+       VISA PATH CARDS
+    ════════════════════════════ */
+    .visa-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .visa-card {
+      border-radius: 16px;
+      padding: 20px 16px;
+      background: white;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+      text-align: center;
+    }
+
+    .visa-card.green { border-top: 5px solid #27ae60; }
+    .visa-card.blue  { border-top: 5px solid #2980b9; }
+
+    .visa-rank {
+      font-size: 11px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .visa-card.green .visa-rank { color: #27ae60; }
+    .visa-card.blue  .visa-rank { color: #2980b9; }
+
+    .visa-emoji { font-size: 34px; margin-bottom: 8px; }
+
+    .visa-card h3 {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 14px;
+      color: #1a1a1a;
+    }
+
+    .visa-flow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+
+    .flow-box {
+      background: #f0f4f8;
+      border-radius: 8px;
+      padding: 7px 10px;
+      font-size: 11px;
+      font-weight: bold;
+      color: #333;
+      width: 100%;
+    }
+
+    .flow-box.pr-box {
+      background: #e8f8ee;
+      color: #155724;
+      border: 1px solid #27ae60;
+    }
+
+    .flow-arrow { font-size: 14px; color: #bbb; }
+
+    .visa-time {
+      font-size: 12px;
+      font-weight: bold;
+      color: #e05c2b;
+      margin-bottom: 10px;
+    }
+
+    .visa-tip {
+      font-size: 11px;
+      color: #666;
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 8px 10px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    /* ════════════════════════════
+       POINTS CARD
+    ════════════════════════════ */
+    .points-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.09);
+    }
+
+    .points-header {
+      background: #e05c2b;
+      color: white;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .points-target {
+      background: rgba(255,255,255,0.2);
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+    }
+
+    .points-list {
+      padding: 18px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .points-row {
+      display: grid;
+      grid-template-columns: 155px 1fr 65px;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .points-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: #333;
+    }
+
+    .points-emoji { font-size: 16px; }
+
+    .points-bar-wrap {
+      background: #eee;
+      border-radius: 6px;
+      height: 9px;
+      overflow: hidden;
+    }
+
+    .points-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #e05c2b, #f5a623);
+      border-radius: 6px;
+      width: 0%;
+      transition: width 1.2s ease;
+    }
+
+    .points-num {
+      font-size: 13px;
+      font-weight: bold;
+      color: #e05c2b;
+      text-align: right;
+    }
+
+    .points-total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 2px solid #f0f0f0;
+      font-weight: bold;
+      font-size: 14px;
+      color: #1a1a1a;
+    }
+
+    .points-total-num {
+      background: #27ae60;
+      color: white;
+      padding: 6px 16px;
+      border-radius: 12px;
+      font-size: 13px;
+    }
+
+    /* ════════════════════════════
+       MISTAKES
+    ════════════════════════════ */
+    .mistakes-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .mistake-item {
+      background: white;
+      border-radius: 14px;
+      padding: 16px;
+      display: flex;
+      gap: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      border-left: 4px solid #e74c3c;
+    }
+
+    .mistake-num {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #e74c3c;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .mistake-right { flex: 1; }
+
+    .mistake-right h4 {
+      font-size: 14px;
+      color: #c0392b;
+      margin-bottom: 8px;
+    }
+
+    .mistake-bad {
+      background: #fde8e8;
+      color: #c0392b;
+      padding: 7px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .mistake-good {
+      background: #e8f8ee;
+      color: #155724;
+      padding: 7px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    /* ════════════════════════════
+       DO NOW CARD
+    ════════════════════════════ */
+    .now-card {
+      background: white;
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.09);
+      border-top: 4px solid #e05c2b;
+    }
+
+    .now-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .now-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .now-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+
+    .now-num {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #e05c2b;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .now-text {
+      font-size: 13px;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .now-text strong {
+      display: block;
+      color: #1a1a1a;
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+
+    /* ════════════════════════════
+       MINI GAME CARDS
+    ════════════════════════════ */
+    .games-row {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .mini-game-card {
+      background: white;
+      border-radius: 14px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      text-decoration: none;
+      color: inherit;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .mini-game-card:hover {
+      border-color: #e05c2b;
+      transform: translateX(5px);
+      box-shadow: 0 4px 16px rgba(224,92,43,0.15);
+    }
+
+    .mini-game-card.featured {
+      border-color: #e05c2b;
+      background: #fff9f7;
+    }
+
+    .mini-game-emoji { font-size: 34px; flex-shrink: 0; }
+    .mini-game-info  { flex: 1; }
+
+    .mini-game-tag {
+      font-size: 10px;
+      font-weight: bold;
+      color: #e05c2b;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+
+    .mini-game-info h4 {
+      font-size: 14px;
+      color: #1a1a1a;
+      margin-bottom: 3px;
+    }
+
+    .mini-game-info p {
+      font-size: 12px;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    .mini-play-btn {
+      background: #e05c2b;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: bold;
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+
+    /* ════════════════════════════
+       GAME CTA BANNER
+    ════════════════════════════ */
+    .game-cta {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      border-radius: 20px;
+      padding: 30px 24px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+    }
+
+    .game-cta h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .game-cta p {
+      font-size: 14px;
+      opacity: 0.85;
+      line-height: 1.8;
+      margin-bottom: 22px;
+    }
+
+    .btn-play-game {
+      display: inline-block;
+      background: #e05c2b;
+      color: white;
+      padding: 14px 36px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.2s;
+      box-shadow: 0 4px 16px rgba(224,92,43,0.5);
+    }
+
+    .btn-play-game:hover {
+      background: #c0451a;
+      transform: scale(1.05);
+    }
+
+    /* ════════════════════════════
+       FINAL CARD
+    ════════════════════════════ */
+    .final-card {
+      background: linear-gradient(135deg, #e05c2b, #c0451a);
+      color: white;
+      border-radius: 20px;
+      padding: 34px 24px;
+      text-align: center;
+      box-shadow: 0 6px 24px rgba(224,92,43,0.35);
+    }
+
+    .final-emoji  { font-size: 52px; margin-bottom: 14px; }
+    .final-card h2 { font-size: 22px; margin-bottom: 16px; }
+
+    .final-viet {
+      font-size: 16px;
+      font-style: italic;
+      opacity: 0.92;
+      line-height: 1.9;
+      margin-bottom: 8px;
+    }
+
+    .final-english {
+      font-size: 13px;
+      opacity: 0.78;
+      line-height: 1.8;
+      margin-bottom: 22px;
+    }
+
+    .final-row {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      font-weight: bold;
+      background: rgba(255,255,255,0.15);
+      padding: 12px 16px;
+      border-radius: 12px;
+    }
+
+    /* ════════════════════════════
+       RESPONSIVE
+    ════════════════════════════ */
+    @media (max-width: 500px) {
+      .compare-cards { grid-template-columns: 1fr; }
+      .visa-cards    { grid-template-columns: 1fr; }
+      .points-row    { grid-template-columns: 120px 1fr 50px; }
+      .back-link     { font-size: 11px; padding: 5px 8px; }
+      .hero-name     { font-size: 24px; }
+      .final-row     { gap: 10px; font-size: 12px; }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     HEADER
+══════════════════════════════════ -->
+<header>
+  <a href="https://teetalkenglish.github.io" class="back-link">← Games</a>
+  <h1>🎮 TeeTalkEnglish</h1>
+  <p>Interactive English Conversation Games</p>
+</header>
+
+<!-- ══════════════════════════════════
+     PAGE CONTENT
+══════════════════════════════════ -->
+<div class="page-wrapper">
+
+  <!-- ── HERO ── -->
+  <div class="hero-card">
+    <div class="hero-flags">🇻🇳 → 🇦🇺</div>
+    <div class="hero-character">👩‍🍳</div>
+    <h1 class="hero-name">Xin chào, Kim! 👋</h1>
+    <p class="hero-sub">
+      Your papers are submitted.<br>
+      Now let's make sure you know<br>
+      <strong>exactly what to do next.</strong>
+    </p>
+    <div class="hero-status">
+      <div class="status-dot"></div>
+      <span>Papers Submitted ✅ — Waiting for Approval</span>
+    </div>
+  </div>
+
+  <!-- ── ALERT ── -->
+  <div class="section-label">⚠️ Check This First, Kim!</div>
+
+  <div class="alert-card">
+    <div class="alert-icon">⚠️</div>
+    <div class="alert-content">
+      <strong>Kim — Check Your Job Title Right Now!</strong>
+      <p>
+        Before anything else, make sure your submitted papers say:
+      </p>
+      <div class="code-box">
+        🥩 Job Title: <strong>BUTCHER</strong><br>
+        📋 ANZSCO Code: <strong>351211</strong>
+      </div>
+      <p>
+        This is your <strong>golden ticket to PR.</strong><br>
+        If it says anything else — talk to your employer immediately!
+      </p>
+    </div>
+  </div>
+
+  <!-- ── STEP 1: JOB TITLE ── -->
+  <div class="section-label">📋 Step 1 — Know Your Job Title</div>
+
+  <p class="section-intro">
+    Kim, not all meat jobs are equal in Australia's eyes.
+    Your job title decides everything about your PR future.
+  </p>
+
+  <div class="compare-cards">
+
+    <div class="compare-card">
+      <div class="compare-top good-top">✅ THIS IS YOU, KIM</div>
+      <div class="compare-body">
+        <span class="compare-emoji">🥩</span>
+        <h3>Butcher</h3>
+        <span class="compare-code">ANZSCO 351211</span>
+        <ul class="compare-list">
+          <li>✅ Skill Level 3 — Skilled</li>
+          <li>✅ Employer sponsorship</li>
+          <li>✅ Points test eligible</li>
+          <li>✅ Clear path to PR</li>
+          <li>✅ \$55,000–\$75,000+/yr</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="compare-card">
+      <div class="compare-top bad-top">❌ AVOID THIS TITLE</div>
+      <div class="compare-body">
+        <span class="compare-emoji">🏭</span>
+        <h3>Meat Process Worker</h3>
+        <span class="compare-code">ANZSCO 831211</span>
+        <ul class="compare-list">
+          <li>❌ Skill Level 5 — Unskilled</li>
+          <li>❌ No sponsorship path</li>
+          <li>❌ Not points eligible</li>
+          <li>❌ Very limited PR path</li>
+          <li>❌ Lower salary</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── STEP 2: JOURNEY MAP ── -->
+  <div class="section-label">🗺️ Step 2 — Kim's Full PR Journey Map</div>
+
+  <p class="section-intro">
+    Here is Kim's complete path from right now to
+    Permanent Residency. She is already at Step 1! 🌟
+  </p>
+
+  <div class="journey-map">
+
+    <!-- Step 1 — NOW -->
+    <div class="journey-step active">
+      <div class="journey-left">
+        <div class="journey-circle now">✅</div>
+        <div class="journey-line"></div>
+      </div>
+      <div class="journey-content">
+        <span class="journey-tag tag-now">👉 YOU ARE HERE</span>
+        <h3>📝 Papers Submitted</h3>
+        <p class="journey-time">⏱️ Right Now — Waiting for Approval</p>
+        <p>
+          Kim has submitted her work approval papers for Australia
+          as a Meat Butcher. She is waiting for the green light.
+          This is the start of her new life! 🌟
+        </p>
+        <div class="journey-tip">
+          💡 Use this waiting time wisely! Practice English on
+          TeeTalkEnglish every single day. The better your English,
+          the faster your promotion — and the faster your PR!
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="journey-step">
+      <div class="journey-left">
+        <div class="journey-circle">2</div>
+        <div class="journey-line"></div>
+      </div>
+      <div class="journey-content">
+        <span class="journey-tag tag-soon">COMING SOON</span>
+        <h3>✈️ Arrive in Australia</h3>
+        <p class="journey-time">⏱️ After Approval — Month 1</p>
+        <p>
+          Kim lands in Australia and starts her exciting new life.
+          The first weeks are busy — she needs to get settled fast.
+        </p>
+        <div class="checklist-mini">
+          <div class="check-item">☐ Save \$3,000–\$5,000 AUD before flying</div>
+          <div class="check-item">☐ Find housing near your workplace</div>
+          <div class="check-item">☐ Open an Australian bank account</div>
+          <div class="check-item">☐ Get a local SIM card</div>
+          <div class="check-item">☐ Register with a local doctor (GP)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="journey-step">
+      <div class="journey-left">
+        <div class="journey-circle">3</div>
+        <div class="journey-line"></div>
+      </div>
+      <div class="journey-content">
+        <span class="journey-tag tag-future">MONTH 1–6</span>
+        <h3>💼 Settle In & Prove Yourself</h3>
+        <p class="journey-time">⏱️ First 6 Months — Most Important Phase!</p>
+        <p>
+          This phase builds Kim's entire PR case. Work hard,
+          save every document, and make a great impression.
+        </p>
+        <div class="checklist-mini">
+          <div class="check-item">☐ Keep EVERY payslip — never throw away!</div>
+          <div class="check-item">☐ Know your min wage: ~\$25–\$28/hr as butcher</div>
+          <div class="check-item">☐ Save all contracts and tax records</div>
+          <div class="check-item">☐ Build good relationship with supervisor</div>
+          <div class="check-item">☐ Start TRA Skills Assessment (takes 3–6 months)</div>
+          <div class="check-item">☐ Practice English daily on TeeTalkEnglish 🎮</div>
+        </div>
+        <div class="journey-tip">
+          💡 Kim's minimum legal wage as a butcher is
+          <strong>~\$25–\$28/hr</strong> under the Meat Industry Award.
+          Never accept less. Underpaying is illegal in Australia!
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="journey-step">
+      <div class="journey-left">
+        <div class="journey-circle">4</div>
+        <div class="journey-line"></div>
+      </div>
+      <div class="journey-content">
+        <span class="journey-tag tag-future">MONTH 6–24</span>
+        <h3>🏗️ Build Your PR Case</h3>
+        <p class="journey-time">⏱️ Months 6 to 24</p>
+        <p>
+          After 6 months of solid work, Kim asks about sponsorship
+          and works toward higher skills and more PR points.
+        </p>
+        <div class="checklist-mini">
+          <div class="check-item">☐ Ask employer about 482 visa sponsorship</div>
+          <div class="check-item">☐ Learn higher skills: boning, quality checks</div>
+          <div class="check-item">☐ Apply for state nomination (491) if regional</div>
+          <div class="check-item">☐ Sit IELTS exam — target score 6.0</div>
+          <div class="check-item">☐ Build points score toward 65–70+ pts</div>
+        </div>
+        <div class="journey-tip">
+          💡 If Kim works in a regional area (not Sydney or Melbourne),
+          she gets 5–10 BONUS points AND access to the faster 491 visa!
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="journey-step">
+      <div class="journey-left">
+        <div class="journey-circle">5</div>
+        <div class="journey-line"></div>
+      </div>
+      <div class="journey-content">
+        <span class="journey-tag tag-future">YEAR 2–4</span>
+        <h3>📄 Lodge PR Application</h3>
+        <p class="journey-time">⏱️ Year 2 to 4 — The Final Step!</p>
+        <p>
+          Kim has all her evidence. Her employer supports her.
+          She submits her Permanent Residency application.
+        </p>
+        <div class="checklist-mini">
+          <div class="check-item">☐ Lodge 186 visa (via employer) OR 191 (regional)</div>
+          <div class="check-item">☐ Submit 2–3 years of payslip evidence</div>
+          <div class="check-item">☐ Complete health check</div>
+          <div class="check-item">☐ Obtain police clearance certificate</div>
+          <div class="check-item">☐ Wait for decision — usually 3–12 months</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 6 — WIN -->
+    <div class="journey-step win-step">
+      <div class="journey-left">
+        <div class="journey-circle win">🏆</div>
+      </div>
+      <div class="journey-content">
+        <span class="journey-tag tag-win">🎉 THE GOAL</span>
+        <h3>🇦🇺 PR GRANTED — Kim lives in Australia forever!</h3>
+        <p class="journey-time">⏱️ Year 3–4 — Kim's Dream Comes True</p>
+        <p>
+          Kim receives her Permanent Residency visa. She can
+          live and work <strong>anywhere in Australia</strong>,
+          bring her family, and apply for citizenship after 4 more
+          years. <strong>She did it! 🎉</strong>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── STEP 3: VISA PATHS ── -->
+  <div class="section-label">🛂 Step 3 — Kim's Two Best Paths to PR</div>
+
+  <p class="section-intro">
+    Both paths lead to the same goal — Permanent Residency.
+    Kim should choose based on her employer and location.
+  </p>
+
+  <div class="visa-cards">
+
+    <div class="visa-card green">
+      <div class="visa-rank">⭐ BEST OPTION</div>
+      <div class="visa-emoji">🏢</div>
+      <h3>Employer Sponsorship</h3>
+      <div class="visa-flow">
+        <div class="flow-box">482 Visa</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-box">Work 2–3 years<br>same employer</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-box">Employer nominates Kim</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-box pr-box">186 = PR ✅</div>
+      </div>
+      <div class="visa-time">⏱️ 3–4 years total</div>
+      <div class="visa-tip">
+        🔑 Key: Stay loyal to ONE employer.<br>
+        Build trust. Never job-hop!
+      </div>
+    </div>
+
+    <div class="visa-card blue">
+      <div class="visa-rank">⭐⭐ FASTEST</div>
+      <div class="visa-emoji">🌾</div>
+      <h3>Regional Sponsored</h3>
+      <div class="visa-flow">
+        <div class="flow-box">491 Visa</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-box">Live in regional<br>area 3 years</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-box">Meet income threshold</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-box pr-box">191 = PR ✅</div>
+      </div>
+      <div class="visa-time">⏱️ 3 years total</div>
+      <div class="visa-tip">
+        📍 Meat plants are mostly regional.<br>
+        This is perfect for Kim!
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── STEP 4: POINTS ── -->
+  <div class="section-label">🎯 Step 4 — Build Kim's Points Score</div>
+
+  <p class="section-intro">
+    For the points-based visa, Kim needs 65+ points.
+    Here is exactly how she gets there:
+  </p>
+
+  <div class="points-card">
+    <div class="points-header">
+      <span>How Kim Earns Her Points</span>
+      <span class="points-target">Target: 65+ pts</span>
+    </div>
+    <div class="points-list">
+
+      <div class="points-row">
+        <div class="points-left">
+          <span class="points-emoji">🎂</span>
+          <span>Age 25–32</span>
+        </div>
+        <div class="points-bar-wrap">
+          <div class="points-bar-fill" data-width="100"></div>
+        </div>
+        <div class="points-num">30 pts</div>
+      </div>
+
+      <div class="points-row">
+        <div class="points-left">
+          <span class="points-emoji">🏆</span>
+          <span>TRA Assessment</span>
+        </div>
+        <div class="points-bar-wrap">
+          <div class="points-bar-fill" data-width="33"></div>
+        </div>
+        <div class="points-num">10 pts</div>
+      </div>
+
+      <div class="points-row">
+        <div class="points-left">
+          <span class="points-emoji">🗣️</span>
+          <span>IELTS 6.0</span>
+        </div>
+        <div class="points-bar-wrap">
+          <div class="points-bar-fill" data-width="33"></div>
+        </div>
+        <div class="points-num">10 pts</div>
+      </div>
+
+      <div class="points-row">
+        <div class="points-left">
+          <span class="points-emoji">💼</span>
+          <span>3 Yrs Work in AU</span>
+        </div>
+        <div class="points-bar-wrap">
+          <div class="points-bar-fill" data-width="17"></div>
+        </div>
+        <div class="points-num">5 pts</div>
+      </div>
+
+      <div class="points-row">
+        <div class="points-left">
+          <span class="points-emoji">📍</span>
+          <span>Regional Bonus</span>
+        </div>
+        <div class="points-bar-wrap">
+          <div class="points-bar-fill" data-width="25"></div>
+        </div>
+        <div class="points-num">5–10 pts</div>
+      </div>
+
+      <div class="points-total-row">
+        <span>🎯 Kim's Target</span>
+        <span class="points-total-num">65–70+ pts ✅</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── STEP 5: MISTAKES ── -->
+  <div class="section-label">❌ Step 5 — Mistakes Kim Must Never Make</div>
+
+  <p class="section-intro">
+    These mistakes can slow down or completely destroy a PR
+    application. Kim must avoid every single one!
+  </p>
+
+  <div class="mistakes-list">
+
+    <div class="mistake-item">
+      <div class="mistake-num">1</div>
+      <div class="mistake-right">
+        <h4>❌ Accepting the wrong job title</h4>
+        <div class="mistake-bad">
+          Contract says "Meat Processing Worker" → NO PR path ❌
+        </div>
+        <div class="mistake-good">
+          Contract says "Butcher — ANZSCO 351211" → Clear PR path ✅
+        </div>
+      </div>
+    </div>
+
+    <div class="mistake-item">
+      <div class="mistake-num">2</div>
+      <div class="mistake-right">
+        <h4>❌ Throwing away payslips & documents</h4>
+        <div class="mistake-bad">
+          "I don't need these old papers" → No proof = No PR ❌
+        </div>
+        <div class="mistake-good">
+          Save every payslip, tax return, and work contract ✅
+        </div>
+      </div>
+    </div>
+
+    <div class="mistake-item">
+      <div class="mistake-num">3</div>
+      <div class="mistake-right">
+        <h4>❌ Changing employers too often</h4>
+        <div class="mistake-bad">
+          Changing jobs every 6 months → Resets PR clock every time ❌
+        </div>
+        <div class="mistake-good">
+          Stay with the SAME employer for 2–3 years → Sponsorship ✅
+        </div>
+      </div>
+    </div>
+
+    <div class="mistake-item">
+      <div class="mistake-num">4</div>
+      <div class="mistake-right">
+        <h4>❌ Moving to Sydney or Melbourne</h4>
+        <div class="mistake-bad">
+          Big city = fewer points + no regional 491 bonus ❌
+        </div>
+        <div class="mistake-good">
+          Regional QLD, SA, WA = up to +10 bonus points ✅
+        </div>
+      </div>
+    </div>
+
+    <div class="mistake-item">
+      <div class="mistake-num">5</div>
+      <div class="mistake-right">
+        <h4>❌ Ignoring English practice</h4>
+        <div class="mistake-bad">
+          Poor English = lower IELTS = fewer points + no promotion ❌
+        </div>
+        <div class="mistake-good">
+          IELTS 6.0 = 10 extra points + faster career growth ✅
+        </div>
+      </div>
+    </div>
+
+    <div class="mistake-item">
+      <div class="mistake-num">6</div>
+      <div class="mistake-right">
+        <h4>❌ Delaying TRA Skills Assessment</h4>
+        <div class="mistake-bad">
+          "I'll do it when I arrive" → TRA takes 3–6 months ❌
+        </div>
+        <div class="mistake-good">
+          Start TRA immediately on arrival — don't waste time ✅
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── STEP 6: DO NOW ── -->
+  <div class="section-label">✅ Step 6 — What Kim Should Do RIGHT NOW</div>
+
+  <div class="now-card">
+    <div class="now-title">
+      Kim, your papers are submitted. While you wait for approval,
+      do these 5 things right now! 👇
+    </div>
+    <div class="now-list">
+
+      <div class="now-item">
+        <div class="now-num">1</div>
+        <div class="now-text">
+          <strong>Practice English every single day</strong>
+          Use TeeTalkEnglish — especially
+          <em>MeatButcher: Shift Time</em> 🥩
+          The better your English, the faster your promotion!
+        </div>
+      </div>
+
+      <div class="now-item">
+        <div class="now-num">2</div>
+        <div class="now-text">
+          <strong>Save money before you fly</strong>
+          Target: \$3,000–\$5,000 AUD.
+          First weeks in Australia are expensive!
+        </div>
+      </div>
+
+      <div class="now-item">
+        <div class="now-num">3</div>
+        <div class="now-text">
+          <strong>Re-check your job title on all papers</strong>
+          It MUST say "Butcher" with ANZSCO code 351211.
+          Check every single page of your documents!
+        </div>
+      </div>
+
+      <div class="now-item">
+        <div class="now-num">4</div>
+        <div class="now-text">
+          <strong>Research your Australian employer</strong>
+          Are they a registered Standard Business Sponsor (SBS)?
+          Have they sponsored workers before?
+        </div>
+      </div>
+
+      <div class="now-item">
+        <div class="now-num">5</div>
+        <div class="now-text">
+          <strong>Start preparing for IELTS now</strong>
+          Target: IELTS 6.0 — this is worth 10 extra PR points.
+          Every point matters on Kim's PR journey!
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── PRACTICE GAMES ── -->
+  <div class="section-label">🎮 Practice English for Kim's New Job</div>
+
+  <p class="section-intro">
+    Kim, your English at work is just as important as your
+    knife skills. Play these games every day!
+  </p>
+
+  <div class="games-row">
+
+    <a class="mini-game-card featured"
+       href="https://teetalkenglish.github.io/The-Butcher-Shop/">
+      <div class="mini-game-emoji">🥩</div>
+      <div class="mini-game-info">
+        <div class="mini-game-tag">⭐ START HERE, KIM!</div>
+        <h4>MeatButcher: Shift Time</h4>
+        <p>Real workplace conversations for your job</p>
+      </div>
+      <div class="mini-play-btn">▶ Play</div>
+    </a>
+
+    <a class="mini-game-card"
+       href="https://teetalkenglish.github.io/FIRST-DAY-AUSTRALIA/">
+      <div class="mini-game-emoji">🇦🇺</div>
+      <div class="mini-game-info">
+        <h4>First Time in Australia</h4>
+        <p>Navigate daily life, taxi, and market</p>
+      </div>
+      <div class="mini-play-btn">▶ Play</div>
+    </a>
+
+    <a class="mini-game-card"
+       href="https://teetalkenglish.github.io/AIRPORT-GAME-FindingTheGate">
+      <div class="mini-game-emoji">✈️</div>
+      <div class="mini-game-info">
+        <h4>Airport: Find Your Gate</h4>
+        <p>Prepare for your arrival day in Australia</p>
+      </div>
+      <div class="mini-play-btn">▶ Play</div>
+    </a>
+
+    <a class="mini-game-card"
+       href="https://teetalkenglish.github.io/grammar-hub/">
+      <div class="mini-game-emoji">📚</div>
+      <div class="mini-game-info">
+        <h4>Grammar Hub</h4>
+        <p>Build your English foundation</p>
+      </div>
+      <div class="mini-play-btn">▶ Play</div>
+    </a>
+
+  </div>
+
+  <!-- ── GAME CTA ── -->
+  <div class="game-cta">
+    <h2>Ready to test what you learned? 🎮</h2>
+    <p>
+      Play the <strong>Australia PR Quiz Game</strong> and
+      guide Kim through all 4 stages of her PR journey!
+      Answer questions, earn stars, and win PR! 🇦🇺
+    </p>
+    <a href="game.html" class="btn-play-game">
+      🎮 Play Kim's PR Game →
+    </a>
+  </div>
+
+  <!-- ── FINAL MESSAGE ── -->
+  <div class="final-card">
+    <div class="final-emoji">🌟</div>
+    <h2>Kim, bạn có thể làm được!</h2>
+    <p class="final-viet">
+      "Bạn không chỉ đi làm thịt.<br>
+      Bạn đang xây dựng tương lai của mình."
+    </p>
+    <p class="final-english">
+      "You are not just going to cut meat.<br>
+      You are building your future."
+    </p>
+    <div class="final-row">
+      <span>🥩 Title: Butcher</span>
+      <span>🇦🇺 Goal: PR</span>
+      <span>💪 Weapon: English</span>
+    </div>
+  </div>
+
+</div><!-- end page-wrapper -->
+
+<script>
+  // Animate points bars when they scroll into view
+  function animateBars() {
+    const bars = document.querySelectorAll(".points-bar-fill");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target.getAttribute("data-width");
+          entry.target.style.width = target + "%";
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    bars.forEach(bar => observer.observe(bar));
+  }
+
+  // Animate cards fading in on scroll
+  function animateCards() {
+    const items = document.querySelectorAll(
+      ".journey-content, .visa-card, .mistake-item, .now-item, .mini-game-card, .compare-card"
+    );
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.style.opacity   = "1";
+            entry.target.style.transform = "translateY(0)";
+          }, 60 * i);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    items.forEach(item => {
+      item.style.opacity   = "0";
+      item.style.transform = "translateY(16px)";
+      item.style.transition = "opacity 0.45s ease, transform 0.45s ease";
+      observer.observe(item);
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    animateBars();
+    animateCards();
+  });
+</script>
+
+</body>
+</html>
